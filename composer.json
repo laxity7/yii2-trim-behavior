@@ -1,0 +1,27 @@
+{
+    "name": "laxity7/yii2-trim-behavior",
+    "description": "Behavior that truncates all spaces and other characters in all attributes in a model before validate",
+    "license": "MIT",
+    "homepage": "https://github.com/laxity7/yii2-trim-behavior",
+    "keywords": ["yii2", "behaviors", "trim"],
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Vlad Varlamov",
+            "email": "work@laxity.ru",
+            "homepage": "http://laxity.ru/"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+          "laxity7\\yii2\\behaviors\\": "src"
+      }
+    },    
+    "require": {
+        "php": ">=5.5",
+        "yiisoft/yii2": "2.0.*"
+    },
+    "require-dev": {
+        "phpunit/dbunit": "^4.0"
+    }
+}
