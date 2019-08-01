@@ -67,8 +67,8 @@ class TrimBehavior extends Behavior
 	{
 		$attributes = $this->owner->getAttributes($this->fields ?: null);
 		foreach ($attributes as $key => $value) {
-			if (is_string($value) && !empty($value)) {
-				$this->owner->$key = trim($value, $this->mask);
+			if (is_string($value) && !empty($value) && (trim($value, $this->mask) !== $value)) {
+				$this->owner->{$key} = trim($value, $this->mask);
 			}
 		}
 
